@@ -2,8 +2,9 @@ new Vue ({
     el: '.toDoList',
       data: {
         todos: [
-          "toto",
-          "tata"
+          "Organize the work",
+          "Go to the gym",
+          "Read a book"
         ]
       },
       methods: {
