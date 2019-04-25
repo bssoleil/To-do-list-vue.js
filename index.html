@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link type="text/css" rel="stylesheet" href="style.css">
+    <link type="text/css" rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/materialize.css">
     <title>To do list</title>
 </head>
 <body>
-    <h1>To do list</h1>
+    <h1 class="red lighthen-1">To do list</h1>
         <div class="toDoList">
                 <input v-model="newList" v-on:keyup.enter="addTodo()">
                 <button  v-on:click="addTodo" type="button">Add</button>
                 <ul>
-                 <li v-for="todo in todos">
-                 {{ todo }}
+                 <li v-for="(todo, index) in todos">
+                 {{ todo | capitalize }}
+                 <button v-on:click="delTodo(index)" type="button">Supprimer</button>
                     </li>
                   </ul>
                   
@@ -23,5 +25,6 @@
      </div>
      <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0/dist/vue.js"></script>
      <script src="main-vue.js"></script>
+     <script src="./js/materialize.js"></script>
 </body>
 </html>
