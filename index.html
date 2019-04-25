@@ -10,12 +10,14 @@
 <body>
     <h1>To do list</h1>
         <div class="toDoList">
+                <input v-model="newList" v-on:keyup.enter="addTodo()">
+                <button  v-on:click="">Add</button>
                 <ul>
                  <li v-for="todo in todos">
                  {{ todo }}
                     </li>
                   </ul>
-                  <input v-model="newList" v-on:keyup.enter="addTodo()">
+                  
                 </div>
                 
      </div>
