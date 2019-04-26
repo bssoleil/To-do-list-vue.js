@@ -10,13 +10,20 @@
 </head>
 <body>
     <h1 class="blue darken-1 indigo-text text-darken-4 center-align hoverable">To do list</h1>
-        <div class="toDoList center-align">
-                <input v-model="newList" v-on:keyup.enter="addTodo()" center-align >
-                <button  v-on:click="addTodo" type="button">Add</button>
+        <div class="toDoList center-align"> 
+            <div class="row">
+                    <div class="col s12 m4 l4é"><p></p></div>
+                    <div class="col s12 m4 l4"><input v-model="newList" v-on:keyup.enter="addTodo()" type="text"></div>
+                    <div class="col s12 m4 l4"><p></p></div>
+                <!-- <input v-model="newList" v-on:keyup.enter="addTodo()"> -->
+            </div>
+                <button  v-on:click="addTodo" type="button" class="btn waves-effect waves-light">Add</button>
+                <br>
+                <br>
                 <ul>
                  <li v-for="(todo, index) in todos">
                  {{ todo | capitalize }}
-                 <button v-on:click="delTodo(index)" type="button">Supprimer</button>
+                 <button v-on:click="delTodo(index)" type="button" class="waves-effect waves-teal btn-flat">Supprimer</button>
                     </li>
                   </ul>
                   
