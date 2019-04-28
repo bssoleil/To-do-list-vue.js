@@ -1,3 +1,4 @@
+"use strict";
 new Vue ({
     el: '.toDoList',
       data: {
@@ -22,5 +23,11 @@ new Vue ({
             value = value.toString()
             return value.charAt(0).toUpperCase() + value.slice(1)
           }
-      }
-    })    
+      },
+      darkMode: function() { 
+        this.tagBody.classList.toggle('darkMode');
+    }
+    })
+  //   function darkMode() { 
+  //     tagBody.classList.toggle('darkMode');
+  // }    
