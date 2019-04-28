@@ -2,11 +2,8 @@
 new Vue ({
     el: '.toDoList',
       data: {
-        todos: [
-          "Organize the work",
-          "Go to the gym",
-          "Read a book"
-        ]
+        todos: []
+                
       },
       methods: {
       addTodo: function() {

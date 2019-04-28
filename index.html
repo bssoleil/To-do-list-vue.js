@@ -13,12 +13,14 @@
 <body class="blue-grey lighten-4">
 
     <h1 class="blue darken-1 indigo-text text-darken-4 center-align hoverable">To do list</h1>
+
     <div class="toDoList center-align">
 
         <div class="row">
             <div class="col s12 m4 l4é">
                 <p></p>
             </div>
+            
             <div class="col s12 m4 l4"><input v-model="newList" v-on:keyup.enter="addTodo()" type="text"></div>
             <div class="col s12 m4 l4">
                 <p></p>
@@ -32,7 +34,7 @@
         <ul>
 
             <li v-for="(todo, index) in todos">
-
+               
                 {{ todo | capitalize }}
 
                 <button v-on:click="delTodo(index)" type="button"
