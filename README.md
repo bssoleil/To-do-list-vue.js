@@ -2,7 +2,7 @@
 ![To do list](https://www.editions-larousse.fr/sites/default/files/styles/couv_livre/public/images/livres/couv/9782035954008-001-T.jpeg?itok=mnSNZz2m)  
 
 --------------------------------------------------------------------------------    
-## Exercice de réalisation d'une to do list vue JS  
+## <p style='color:red; background-color:lightblue; text-align:center'>Exercice de réalisation d'une to do list vue JS</p> 
 --------------------------------------------------------------------------------
 
 ### Critères qualités :  
