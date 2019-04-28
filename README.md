@@ -1,8 +1,7 @@
 # To-do-list-vue.js  
-![To do list](https://www.editions-larousse.fr/sites/default/files/styles/couv_livre/public/images/livres/couv/9782035954008-001-T.jpeg?itok=mnSNZz2m)  
-
+![To do list](https://products-images.di-static.com/image/larousse-mon-semainier-decoptimist/9782035954060-475x500-1.jpg)
 --------------------------------------------------------------------------------    
-## Exercice de réalisation d'une to do list vue JS  
+## Exercice de réalisation d'une  <span style='color:red'>to do list vue JS</span> 
 --------------------------------------------------------------------------------
 
 ### Critères qualités :  
